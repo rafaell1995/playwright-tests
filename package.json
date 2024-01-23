@@ -1,0 +1,21 @@
+{
+	"name": "playwright-tests",
+	"version": "1.0.0",
+	"description": "Repository for tests accessibility",
+	"main": "index.js",
+	"scripts": {
+		"test": "node ./node_modules/jogajunto-tools-webaudit/dist/helpers/preTestSetup.js tests .xlsx && npx playwright test",
+		"test:trace": "node ./node_modules/jogajunto-tools-webaudit/dist/helpers/preTestSetup.js tests .xlsx && npx playwright test --trace on"
+	},
+	"keywords": [],
+	"author": "Rafael de Araujo Procopio",
+	"license": "ISC",
+	"devDependencies": {
+		"@playwright/test": "^1.41.1",
+		"@types/node": "^20.11.2",
+		"jogajunto-tools-webaudit": "github:jogajunto/jogajunto-tools-webaudit"
+	},
+	"dependencies": {
+		"node-html-parser": "^6.1.12"
+	}
+}
