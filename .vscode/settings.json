@@ -1,0 +1,10 @@
+{
+    // Enable format on save
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    // Set default formatter for all file types
+    "[*]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    }
+}
